@@ -1,4 +1,4 @@
-function createItemBefore(item) {
+function createItemAfter(item) {
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(item));
 
@@ -11,7 +11,7 @@ function createItemBefore(item) {
     document.querySelector('ul').appendChild(li);
 }
 
-function createItemAfter(item) {
+function createItemBefore(item) {
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(item));
 
@@ -27,5 +27,5 @@ function createItemAfter(item) {
     document.querySelector('ul').insertBefore(li, firstItem);
 }
 
-createItemBefore('item 4');
-createItemAfter('item 5');
+createItemAfter('item 4');
+createItemBefore('item 5');
