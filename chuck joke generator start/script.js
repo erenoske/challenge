@@ -20,6 +20,5 @@ function getJoke() {
   xhr.send();
 }
 
-getJoke();
-
+document.addEventListener('DOMContentLoaded', getJoke);
 button.addEventListener('click', getJoke);
